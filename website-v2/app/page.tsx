@@ -130,7 +130,7 @@ export default function Home() {
             className="flex items-center gap-5 mt-10"
           >
             <a
-              href="https://github.com/iamsogoodlo"
+              href="https://github.com/bryanliu08"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted hover:text-foreground transition-colors"
