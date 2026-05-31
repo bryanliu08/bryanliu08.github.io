@@ -108,17 +108,19 @@ export default function Home() {
             </p>
 
             <p>
-              i currently do research with{" "}
+              i do research with{" "}
               <a
                 href="https://zhijing-jin.com/home/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-foreground hover-underline inline-flex items-center gap-1"
               >
-                prof. zhijing jin&apos;s jinesis ai lab
+                prof. zhijing jin&apos;s lab
                 <ArrowUpRight className="w-3 h-3" />
               </a>
-              , have worked in software engineering for{" "}
+              {" "}at the <span className="text-foreground">vector institute</span> and{" "}
+              <span className="text-foreground">university of toronto</span>. i have
+              worked in software engineering for{" "}
               <span className="text-foreground">claymoo</span>, and enjoy exploring
               the intersection of ml systems and quantitative methods.
             </p>
@@ -154,7 +156,7 @@ export default function Home() {
             >
               <Mail className="w-5 h-5" />
             </a>
-            <span className="text-muted text-sm">bryan [at] cs [dot] toronto [dot] edu</span>
+            <span className="text-muted text-sm">bryanliu [at] cs [dot] toronto [dot] edu</span>
           </motion.div>
         </motion.div>
       </section>
