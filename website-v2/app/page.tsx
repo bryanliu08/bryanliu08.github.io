@@ -98,13 +98,10 @@ export default function Home() {
 
             <p>
               my research interests lie in{" "}
-              <em className="text-foreground not-italic">multi-agent alignment</em>,
-              particularly the dynamics of{" "}
-              <span className="text-foreground">byzantine agents</span> and{" "}
-              <span className="text-foreground">contagion</span> in multi-agent systems—
-              understanding how misinformation spreads
-              with the broader goal of making these systems safer and more robust
-              to failures, attacks, and emergent risks.
+              <em className="text-foreground not-italic">robustness and interpretability</em>{" "}
+              for{" "}
+              <span className="text-foreground">large language models</span> and{" "}
+              <span className="text-foreground">multi-agent systems</span>.
             </p>
 
             <p>
