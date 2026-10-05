@@ -78,6 +78,24 @@
   );
   counters.forEach((c) => cio.observe(c));
 
+  // Project slider
+  const slider = document.getElementById("slider");
+  if (slider) {
+    const btns = document.querySelectorAll(".slider-btn");
+    const step = () => (slider.querySelector(".card")?.getBoundingClientRect().width || 440) + 16;
+    btns.forEach((b) =>
+      b.addEventListener("click", () => slider.scrollBy({ left: step() * Number(b.dataset.dir), behavior: "smooth" }))
+    );
+    const sync = () => {
+      const max = slider.scrollWidth - slider.clientWidth - 2;
+      btns[0].disabled = slider.scrollLeft <= 2;
+      btns[1].disabled = slider.scrollLeft >= max;
+    };
+    slider.addEventListener("scroll", sync, { passive: true });
+    window.addEventListener("resize", sync);
+    sync();
+  }
+
   // Toronto clock
   const clock = document.getElementById("clock");
   const fmt = new Intl.DateTimeFormat("en-CA", {
