@@ -3,30 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bryan Liu — ML Researcher</title>
-  <meta name="description" content="Bryan Liu. Machine learning researcher at the Vector Institute, undergrad at the University of Toronto. Time-series foundation models, multi-agent RL, AI safety." />
-  <meta property="og:title" content="Bryan Liu — ML Researcher" />
-  <meta property="og:description" content="Time-series foundation models, multi-agent RL, AI safety. Vector Institute / University of Toronto." />
-  <meta property="og:image" content="https://bryanliu08.github.io/profile.png" />
-  <meta name="theme-color" content="#0a0a0a" />
+  <title>Bryan Liu | Machine Learning Researcher, Vector Institute & University of Toronto</title>
+  <meta name="description" content="Bryan Liu is a machine learning researcher at the Vector Institute and a University of Toronto student working on reinforcement learning, AI safety, and foundation models. First author of FOMO (ICLR 2027 submission), creator of WordPlay and TFT_SIM." />
+  <meta name="keywords" content="Bryan Liu, Bryan Liu Toronto, Bryan Liu machine learning, Bryan Liu Vector Institute, Bryan Liu University of Toronto, Bryan Liu AI researcher, bryanliu08, reinforcement learning, AI safety, foundation models, time-series forecasting, multi-agent systems, LLM agents" />
+  <meta name="author" content="Bryan Liu" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://bryanliu08.github.io/" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Bryan Liu | Machine Learning Researcher" />
+  <meta property="og:description" content="RL, AI safety, and foundation models. Vector Institute / University of Toronto." />
+  <meta property="og:url" content="https://bryanliu08.github.io/" />
+  <meta property="og:site_name" content="Bryan Liu" />
+  <meta property="og:image" content="https://bryanliu08.github.io/profile.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bryan Liu | Machine Learning Researcher" />
+  <meta name="twitter:description" content="RL, AI safety, and foundation models. Vector Institute / University of Toronto." />
+  <meta name="twitter:image" content="https://bryanliu08.github.io/profile.jpg" />
+  <meta name="theme-color" content="#f7f3ee" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://bryanliu08.github.io/#person",
+    "name": "Bryan Liu",
+    "givenName": "Bryan",
+    "familyName": "Liu",
+    "url": "https://bryanliu08.github.io/",
+    "email": "mailto:bryanliu@cs.toronto.edu",
+    "jobTitle": "Machine Learning Researcher",
+    "description": "Machine learning researcher working on reinforcement learning, AI safety, and foundation models.",
+    "worksFor": { "@type": "Organization", "name": "Vector Institute", "url": "https://vectorinstitute.ai/" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Toronto", "url": "https://www.utoronto.ca/" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Toronto", "addressRegion": "ON", "addressCountry": "CA" },
+    "knowsAbout": ["Reinforcement Learning", "AI Safety", "Foundation Models", "Time-Series Forecasting", "Multi-Agent Systems", "Large Language Models", "PyTorch"],
+    "image": "https://bryanliu08.github.io/profile.jpg",
+    "sameAs": [
+      "https://github.com/bryanliu08",
+      "https://linkedin.com/in/bryan-liu-525237304"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Bryan Liu",
+    "url": "https://bryanliu08.github.io/",
+    "author": { "@id": "https://bryanliu08.github.io/#person" }
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
-  <div class="spotlight" aria-hidden="true"></div>
+  <div class="blobs" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
   <div class="progress" aria-hidden="true"></div>
 
-  <!-- NAV -->
   <nav class="nav">
     <a href="#top" class="nav-logo">BL<span class="blink">_</span></a>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#work">Work</a>
-      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
       <a href="#awards">Awards</a>
       <a href="#contact">Contact</a>
     </div>
@@ -37,6 +81,7 @@
 
     <!-- HERO -->
     <section class="hero">
+      <div class="hero-left">
       <div class="hero-meta mono reveal">
         <span>Toronto, ON</span>
         <span class="dot"></span>
@@ -45,26 +90,37 @@
         <span class="status"><i></i>Open to research & internships</span>
       </div>
 
+      <div class="hero-hi reveal">hi guys, i'm</div>
       <h1 class="hero-title">
         <span class="line"><span class="word reveal-up">Bryan</span></span>
         <span class="line"><span class="word reveal-up delay-1">Liu<span class="accent">.</span></span></span>
       </h1>
 
       <p class="hero-sub reveal delay-2">
-        ML researcher building <em>time-series foundation models</em> and studying
-        <em>deception in LLM agents</em> at the Vector Institute. Math &amp; physics undergrad at the University of Toronto.
+        I do ML research at the <strong>Vector Institute</strong> on
+        <em>reinforcement learning</em>, <em>AI safety</em>, and <em>foundation models</em>.
+        I'm also a math &amp; physics undergrad at the University of Toronto.
       </p>
 
       <div class="hero-actions reveal delay-3">
-        <a href="#research" class="btn btn-primary">See the research</a>
-        <a href="mailto:bryanliu@cs.toronto.edu" class="btn btn-ghost">bryanliu@cs.toronto.edu</a>
+        <a href="#projects" class="btn btn-primary">See my work</a>
+        <a href="https://github.com/bryanliu08" target="_blank" rel="noopener" class="btn btn-ghost">github.com/bryanliu08 ↗</a>
+      </div>
+
+      <div class="hero-pills reveal delay-3">
+        <span class="pill p-lav">Reinforcement Learning</span>
+        <span class="pill p-mint">AI Safety</span>
+        <span class="pill p-peach">Foundation Models</span>
+        <span class="pill p-sky">Multi-Agent Systems</span>
+      </div>
       </div>
 
       <div class="hero-photo reveal delay-2">
         <div class="photo-frame">
-          <img src="profile.png" alt="Bryan Liu" />
+          <img src="profile.jpg" alt="Bryan Liu" width="1200" height="900" />
+          <span class="photo-sticker">shh, it's a secret</span>
         </div>
-        <div class="photo-tag mono">EST. 2008 — TORONTO</div>
+        <div class="photo-tag mono">Me, at the Faker handprint in Seoul</div>
       </div>
 
       <a href="#about" class="scroll-hint mono" aria-label="Scroll down">
@@ -98,26 +154,26 @@
       </div>
       <div class="about-grid">
         <p class="about-lead reveal">
-          I care about models that are <em>robust</em>, <em>interpretable</em>, and honest about what they don't know.
-          Right now that means two things: making time-series foundation models forecast better with zero extra training,
-          and figuring out when and why LLM agents choose to stay silent or deceive.
+          I'm interested in <em>reinforcement learning</em>, <em>AI safety</em>, and <em>foundation models</em>.
+          Most of what I do sits where those three meet: I build environments where LLM agents learn to cooperate and compete,
+          study when agents deceive or stay silent, and find ways to make forecasting foundation models better without retraining them.
         </p>
         <div class="about-side reveal delay-1">
           <div class="fact">
             <span class="mono label">Currently</span>
-            <span>ML Researcher, Vector Institute — Jinesis AI Lab & CleverHans Lab</span>
+            <span>Machine Learning Researcher, Vector Institute (Jinesis AI Lab)</span>
           </div>
           <div class="fact">
             <span class="mono label">Studying</span>
-            <span>B.Sc. Mathematical & Physical Sciences, UofT · Class of 2030</span>
+            <span>B.Sc. Mathematical &amp; Physical Sciences, University of Toronto · Class of 2030</span>
           </div>
           <div class="fact">
-            <span class="mono label">Focus</span>
-            <span>Time-series FMs · Multi-agent RL · AI safety</span>
+            <span class="mono label">Research</span>
+            <span>First author on FOMO (ICLR 2027 submission) · AI safety paper in progress for ICML 2027</span>
           </div>
           <div class="fact">
             <span class="mono label">Previously</span>
-            <span>Founder & CTO at AmplyfeAI · MLE intern at Silmo · SWE intern at Claymoo</span>
+            <span>Founder &amp; CTO at AmplyfeAI · Software Engineer Intern at Claymoo</span>
           </div>
         </div>
       </div>
@@ -125,21 +181,21 @@
 
     <!-- STATS -->
     <section class="stats reveal">
-      <div class="stat">
+      <div class="stat s-lav">
         <span class="stat-num" data-count="15" data-suffix="/15">0</span>
         <span class="stat-label mono">settings improved by FOMO</span>
       </div>
-      <div class="stat">
+      <div class="stat s-mint">
         <span class="stat-num" data-count="5.3" data-suffix="×" data-decimals="1">0</span>
         <span class="stat-label mono">median worst-decile loss cut</span>
       </div>
-      <div class="stat">
-        <span class="stat-num" data-count="22" data-suffix="%">0</span>
-        <span class="stat-label mono">lower loss vs. Chronos-Small</span>
+      <div class="stat s-peach">
+        <span class="stat-num" data-count="57" data-suffix="">0</span>
+        <span class="stat-label mono">scenarios in the WordPlay LLM benchmark</span>
       </div>
-      <div class="stat">
-        <span class="stat-num" data-count="6" data-suffix="×">0</span>
-        <span class="stat-label mono">bankroll growth, 3 months</span>
+      <div class="stat s-sky">
+        <span class="stat-num" data-count="2000" data-prefix="$" data-suffix="+">0</span>
+        <span class="stat-label mono">MRR in 2 months at AmplyfeAI</span>
       </div>
     </section>
 
@@ -154,24 +210,12 @@
         <article class="job reveal">
           <div class="job-when mono">Nov 2025 — Present</div>
           <div class="job-body">
-            <h3>Vector Institute <span class="muted">/ Jinesis AI Lab, CleverHans Lab</span></h3>
+            <h3>Vector Institute <span class="muted">/ Jinesis AI Lab</span></h3>
             <div class="job-role mono">Machine Learning Researcher</div>
             <ul>
-              <li>First author on <strong>FOMO</strong> (under review, ICLR 2027): a training-free method that restricts cross-series attention to late layers of time-series foundation models. Improves forecasts in 15/15 settings across 4 models and 5 datasets.</li>
-              <li>Studying strategic silence and emergent deception in LLM agents for an AI safety paper targeting ICML 2027.</li>
-              <li>Built <strong>WordPlay</strong>, a composable Python framework that expresses 2,000+ line DeepMind Melting Pot substrates in ~300 lines. Used it to create a 57-scenario LLM RL benchmark.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="job reveal">
-          <div class="job-when mono">Jun 2026 — Jul 2026</div>
-          <div class="job-body">
-            <h3>Silmo</h3>
-            <div class="job-role mono">Machine Learning Engineer Intern</div>
-            <ul>
-              <li>Developed <strong>GraphTSFM</strong>, a 50M-parameter graph-based time-series foundation model. Cut forecasting loss 18% vs. Toto-2 4M and 22% vs. Chronos-Small on Kalshi and Polymarket data.</li>
-              <li>Built quantile and jump-prediction heads with a custom multi-objective loss for probabilistic 24-hour forecasting and large-move detection.</li>
+              <li>I'm first author on <strong>FOMO</strong> (under review at ICLR 2027), a training-free method that restricts cross-series attention to the late layers of time-series foundation models. Improved forecasts in 15 of 15 settings across 4 models and 5 datasets.</li>
+              <li>I'm leading an AI safety study on strategic silence and emergent deception in LLM agents, targeting ICML 2027.</li>
+              <li>I'm a core contributor to <strong>WordPlay</strong>, a framework for building text-based multi-agent RL environments for LLMs. I built a 57-scenario benchmark on top of it to evaluate coordination and social reasoning.</li>
             </ul>
           </div>
         </article>
@@ -180,11 +224,11 @@
           <div class="job-when mono">Oct 2025 — Mar 2026</div>
           <div class="job-body">
             <h3>AmplyfeAI</h3>
-            <div class="job-role mono">Founder & CTO</div>
+            <div class="job-role mono">Founder &amp; CTO</div>
             <ul>
-              <li>Hit $2,000+ MRR in 2 months building custom n8n automations for small-business clients.</li>
-              <li>Shipped a Slack bot that parsed employee availability and auto-generated schedules for a 15+ person team.</li>
-              <li>Designed end-to-end automation across invoicing, CRM orchestration, and client follow-ups, saving each client 10+ hours a week.</li>
+              <li>I got to $2,000+ MRR within 2 months by building and deploying custom AI workflow automations for small-business clients.</li>
+              <li>I shipped a Slack bot that parsed team availability and auto-generated schedules for a 15+ person team, removing a weekly manual task entirely.</li>
+              <li>I designed end-to-end automation across invoicing, CRM orchestration, and client follow-ups, saving each client 10+ hours per week.</li>
             </ul>
           </div>
         </article>
@@ -195,8 +239,8 @@
             <h3>Claymoo</h3>
             <div class="job-role mono">Software Engineer Intern</div>
             <ul>
-              <li>Cut page-load latency 40% for 10,000+ daily visitors with dynamic loading in Shopify Liquid and JavaScript.</li>
-              <li>Eliminated 90% of inventory errors across 50+ spreadsheets with Python and Apps Script reconciliation pipelines.</li>
+              <li>I cut page-load latency by 40% for a storefront with 10,000+ daily visitors by implementing dynamic loading in Shopify Liquid and JavaScript.</li>
+              <li>I eliminated 90% of inventory errors across 50+ spreadsheets with Python and Google Apps Script reconciliation pipelines.</li>
             </ul>
           </div>
         </article>
@@ -207,60 +251,124 @@
             <h3>Independent <span class="muted">/ Algorithmic Sports Betting</span></h3>
             <div class="job-role mono">Software Engineer</div>
             <ul>
-              <li>Built an automated +EV and cross-book arbitrage pipeline that captured mispriced odds within seconds.</li>
-              <li>Grew a bankroll 6× ($5K to $30K) in 3 months via +EV betting, arbitrage, and Kelly Criterion sizing.</li>
+              <li>I built an automated positive-expected-value and cross-book arbitrage pipeline that captured mispriced odds within seconds of them appearing.</li>
+              <li>I grew a bankroll 6× in 3 months using +EV betting, arbitrage, and Kelly Criterion position sizing.</li>
             </ul>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- RESEARCH / PROJECTS -->
-    <section id="research" class="section">
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
       <div class="section-head reveal">
         <span class="mono index">03</span>
         <h2>Research &amp; Projects</h2>
       </div>
 
       <div class="cards">
-        <article class="card reveal">
+        <article class="card c-lav reveal">
           <div class="card-top">
-            <span class="mono tag">Paper · ICLR 2027 (under review)</span>
+            <span class="mono tag">Paper · ICLR 2027 submission</span>
             <span class="card-num mono">01</span>
           </div>
           <h3>FOMO: Forecasting with Other Markets' Observations</h3>
-          <p>A training-free method that restricts cross-series attention to the late layers of time-series foundation models. Better forecasts in every tested setting, with worst-decile loss cut by a median 5.3×.</p>
-          <div class="card-foot mono">Time-series · Attention · Foundation models</div>
+          <p>A training-free way to make time-series foundation models use related series. By restricting cross-series attention to the late layers, FOMO improved forecasts in every one of 15 model-and-dataset settings and cut worst-decile loss by a median 5.3×. I'm first author.</p>
+          <div class="card-foot">
+            <span class="mono">Time-series · Foundation models · Attention</span>
+            <span class="mono soon">Code on request</span>
+          </div>
         </article>
 
-        <article class="card reveal delay-1">
+        <article class="card c-mint reveal delay-1">
           <div class="card-top">
-            <span class="mono tag">Paper · ICML 2027 (in progress)</span>
+            <span class="mono tag">Paper · AI safety · ICML 2027 target</span>
             <span class="card-num mono">02</span>
           </div>
-          <h3>Strategic Silence &amp; Emergent Deception in LLM Agents</h3>
-          <p>When do agents choose not to tell you something? Studying how deception and withholding emerge in multi-agent LLM settings, and what it means for safety.</p>
-          <div class="card-foot mono">AI safety · Multi-agent · LLMs</div>
+          <h3>Strategic Silence in Multi-Agent LLM Systems</h3>
+          <p>When an agent can help but chooses not to speak, that's a form of deception. I measure strategic silence in multi-agent LLM settings and show how it emerges from incentives, with implications for monitoring and alignment.</p>
+          <div class="card-foot">
+            <span class="mono">AI safety · Multi-agent · LLM agents</span>
+            <a href="https://github.com/bryanliu08/Strategic-Silence" target="_blank" rel="noopener" class="gh">GitHub ↗</a>
+          </div>
         </article>
 
-        <article class="card reveal">
+        <article class="card c-peach reveal">
           <div class="card-top">
-            <span class="mono tag">Framework + Benchmark</span>
+            <span class="mono tag">Open-source framework</span>
             <span class="card-num mono">03</span>
           </div>
           <h3>WordPlay</h3>
-          <p>A composable Python framework that compresses 2,000+ line Melting Pot substrates to ~300 lines. Powers a 57-scenario LLM RL benchmark testing Llama 3.1 8B, Llama 3.2 1B, and GPT-5.4 on coordination and social reasoning.</p>
-          <div class="card-foot mono">RL · Multi-agent · Python</div>
+          <p>A simple way to build multi-agent RL environments for LLMs. I help build and maintain it. Environments are plain Python classes with composable entity components and readable text observations, so a 2,000-line Melting Pot substrate becomes about 300 lines. Powers a 57-scenario benchmark of LLM coordination and social reasoning.</p>
+          <div class="card-foot">
+            <span class="mono">MARL · LLM agents · Python</span>
+            <a href="https://github.com/AndreiMuresanu/Word_Play" target="_blank" rel="noopener" class="gh">GitHub ↗</a>
+          </div>
         </article>
 
-        <article class="card reveal delay-1">
+        <article class="card c-sky reveal delay-1">
           <div class="card-top">
-            <span class="mono tag">Model · Silmo</span>
+            <span class="mono tag">Simulator + benchmark · in progress</span>
             <span class="card-num mono">04</span>
           </div>
-          <h3>GraphTSFM</h3>
-          <p>A 50M-parameter graph-based time-series foundation model for prediction markets. Beats Toto-2 and Chronos-Small on Kalshi and Polymarket, with quantile and jump heads for probabilistic 24h forecasts.</p>
-          <div class="card-foot mono">GNNs · Forecasting · PyTorch</div>
+          <h3>TFT_SIM</h3>
+          <p>An open, data-driven Teamfight Tactics simulator I'm building for RL and LLM agents on top of WordPlay. A new set is a data rebuild, not new code. The question I care about: can agents discover a game's meta before humans do? Targeting NeurIPS Datasets &amp; Benchmarks.</p>
+          <div class="card-foot">
+            <span class="mono">RL · Game AI · 8-player</span>
+            <span class="mono soon">Private until release</span>
+          </div>
+        </article>
+
+        <article class="card c-lav reveal">
+          <div class="card-top">
+            <span class="mono tag">Research · credit assignment</span>
+            <span class="card-num mono">05</span>
+          </div>
+          <h3>PACCA: Path-Specific Counterfactual Credit Assignment</h3>
+          <p>My method for crediting each agent in a tool-using LLM team by splitting its effect on the team reward into direct and teammate-mediated parts, then uses that credit as the advantage in GRPO/PPO training. Validated on synthetic SCMs and replicated on real API agents.</p>
+          <div class="card-foot">
+            <span class="mono">Multi-agent RL · Causal inference · GRPO</span>
+            <span class="mono soon">Code on request</span>
+          </div>
+        </article>
+
+        <article class="card c-mint reveal delay-1">
+          <div class="card-top">
+            <span class="mono tag">Research · interpretability</span>
+            <span class="card-num mono">06</span>
+          </div>
+          <h3>Sandbagging under RLVR</h3>
+          <p>My mechanistic interpretability work on sandbagging in reasoning models trained with verifiable rewards: behavioral evidence, partial-identification bounds, and circuit attribution on frontier models.</p>
+          <div class="card-foot">
+            <span class="mono">AI safety · Interpretability · RLVR</span>
+            <span class="mono soon">Private until release</span>
+          </div>
+        </article>
+
+        <article class="card c-peach reveal">
+          <div class="card-top">
+            <span class="mono tag">Product · agents</span>
+            <span class="card-num mono">07</span>
+          </div>
+          <h3>AdminBot</h3>
+          <p>An approval-gated AI assistant I built with a teammate to run our lab's admin work: members, papers, reimbursements, recommendation letters, calendar, email, and Slack. Real-world actions only execute after a human approves them. Unsupported actions fail closed.</p>
+          <div class="card-foot">
+            <span class="mono">LLM agents · Tool use · TypeScript</span>
+            <a href="https://github.com/akhkim/adminbot" target="_blank" rel="noopener" class="gh">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="card c-sky reveal delay-1">
+          <div class="card-top">
+            <span class="mono tag">Game · design + simulation</span>
+            <span class="card-num mono">08</span>
+          </div>
+          <h3>Guild of Nobodies</h3>
+          <p>A mobile-portrait web RPG I made where every hero is permanently unique. It has an engine-agnostic simulation layer, a headless balance harness that proves the design pillars numerically, and a 57-check UI smoke suite.</p>
+          <div class="card-foot">
+            <span class="mono">TypeScript · Game design · Simulation</span>
+            <span class="mono soon">Playable build</span>
+          </div>
         </article>
       </div>
     </section>
@@ -291,8 +399,8 @@
           <div class="chips"><span>Python</span><span>C++</span><span>TypeScript</span><span>JavaScript</span><span>SQL</span><span>HTML/CSS</span></div>
         </div>
         <div class="skill-row">
-          <span class="mono label">ML / Quant</span>
-          <div class="chips"><span>PyTorch</span><span>Reinforcement Learning</span><span>Multi-Agent Systems</span><span>GNNs</span><span>Time-Series Forecasting</span></div>
+          <span class="mono label">ML / Research</span>
+          <div class="chips"><span>PyTorch</span><span>Reinforcement Learning</span><span>Multi-Agent Systems</span><span>GNNs</span><span>Time-Series Forecasting</span><span>LLM Evaluation</span></div>
         </div>
         <div class="skill-row">
           <span class="mono label">Tools</span>
@@ -305,7 +413,7 @@
     <section id="contact" class="contact">
       <div class="reveal">
         <span class="mono index">06 — Contact</span>
-        <h2 class="contact-title">Let's build<br/>something <em>serious</em>.</h2>
+        <h2 class="contact-title">Say hi,<br/>let's <em>build</em>.</h2>
       </div>
       <div class="contact-links reveal delay-1">
         <a href="mailto:bryanliu@cs.toronto.edu" class="contact-link">
@@ -318,7 +426,7 @@
         </a>
         <a href="https://linkedin.com/in/bryan-liu-525237304" target="_blank" rel="noopener" class="contact-link">
           <span class="mono label">LinkedIn</span>
-          <span class="val">bryan-liu-525237304</span>
+          <span class="val">linkedin.com/in/bryan-liu-525237304</span>
         </a>
         <a href="resume.pdf" target="_blank" rel="noopener" class="contact-link">
           <span class="mono label">Resume</span>

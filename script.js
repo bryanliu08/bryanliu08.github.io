@@ -61,12 +61,13 @@
         const target = parseFloat(el.dataset.count);
         const dec = parseInt(el.dataset.decimals || "0", 10);
         const suffix = el.dataset.suffix || "";
+        const prefix = el.dataset.prefix || "";
         const dur = reduce ? 0 : 1400;
         const start = performance.now();
         const tick = (now) => {
           const t = Math.min(1, (now - start) / (dur || 1));
           const ease = 1 - Math.pow(1 - t, 4);
-          el.textContent = (target * ease).toFixed(dec) + suffix;
+          el.textContent = prefix + (target * ease).toFixed(dec).replace(/\B(?=(\d{3})+(?!\d))/g, ",") + suffix;
           if (t < 1) requestAnimationFrame(tick);
         };
         requestAnimationFrame(tick);
